@@ -16,5 +16,5 @@ abstract class Invitado {
         return "Invitado " + this.apellidos + " " + this.nombre + ", correo: " + this.correo;
     }
 
-    public String getNombre(){return this.nombre;}
+    public String getCorreo(){return this.correo;}
 }

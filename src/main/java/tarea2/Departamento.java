@@ -17,7 +17,7 @@ class Departamento implements Invitable {
     @Override
     public void invitar(Invitacion invitacion) {
         for (int i = 0; i < empleados.size(); i++){
-            System.out.println("Empleado " + empleados.get(i).getCorreo() + " invitado.");
+            empleados.get(i).invitar(invitacion);
         }
     }
 

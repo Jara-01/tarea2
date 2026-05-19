@@ -1,14 +1,8 @@
 package tarea2;
 
-class InvitadoExterno implements Invitable {
-    private String apellidos;
-    private String nombre;
-    private String correo;
-
-    public InvitadoExterno(String apellidos, String nombre, String correo){
-        this.apellidos = apellidos;
-        this.nombre = nombre;
-        this.correo = correo;
+class Externo extends Invitado implements Invitable {
+    public Externo(String apellidos, String nombre, String correo){
+        super(apellidos, nombre, correo);
     }
 
     @Override
@@ -16,6 +10,6 @@ class InvitadoExterno implements Invitable {
 
     @Override
     public String toString(){
-        return "Invitado no empleado " + this.apellidos + " " + this.nombre + ", correo: " + this.correo;
+        return "No-empleado: " + super.toString();
     }
 }

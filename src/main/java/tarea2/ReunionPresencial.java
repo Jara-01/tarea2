@@ -9,4 +9,9 @@ class ReunionPresencial extends Reunion {
         super(dia, hora, duracion);
         this.sala = room;
     }
+
+    @Override
+    public String toString(){
+        return super.toString() + "Sala de reunión: " + this.sala;
+    }
 }

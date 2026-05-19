@@ -11,4 +11,9 @@ class Departamento implements Invitable {
 
     @Override
     public void invitar() {}
+
+    @Override
+    public String toString(){
+        return "Departamento " + this.nombre + ": " + this.obtenerCantidadEmpleados() + " empleados.";
+    }
 }

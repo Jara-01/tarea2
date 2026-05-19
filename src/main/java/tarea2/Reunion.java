@@ -25,4 +25,10 @@ abstract class Reunion {
     public void iniciar(){}
     public void finalizar(){}
     public void producirInforme(){}
+
+    @Override
+    public String toString(){
+        return "Reunión planeada para las " + this.horaPrevista + " horas, el día " + this.fecha + " duración prevista de " + this.duracionPrevista
+                + "\n Hora de inicio: " + this.horaInicio + ". Hora de finalización: " + this.horaFin;
+    }
 }

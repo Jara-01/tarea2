@@ -9,4 +9,9 @@ class ReunionVirtual extends Reunion {
         super(dia, hora, duracion);
         this.enlace = link;
     }
+
+    @Override
+    public String toString(){
+        return super.toString() + "Enlace de la reunión: " + this.enlace;
+    }
 }

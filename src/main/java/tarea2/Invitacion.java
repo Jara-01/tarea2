@@ -7,4 +7,9 @@ class Invitacion {
     public Invitacion(Instant horaReunion) {
         this.hora = horaReunion;
     }
+
+    @Override
+    public String toString(){
+        return "Invitación para reunión a las " + this.hora;
+    }
 }

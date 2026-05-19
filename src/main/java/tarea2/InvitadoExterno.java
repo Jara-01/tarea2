@@ -13,4 +13,9 @@ class InvitadoExterno implements Invitable {
 
     @Override
     public void invitar() {}
+
+    @Override
+    public String toString(){
+        return "Invitado no empleado " + this.apellidos + " " + this.nombre + ", correo: " + this.correo;
+    }
 }

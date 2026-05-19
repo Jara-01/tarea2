@@ -15,4 +15,9 @@ class Empleado implements Invitable {
 
     @Override
     public void invitar() {}
+
+    @Override
+    public String toString(){
+        return "Empleado " + this.apellidos + " " + this.nombre + ". ID: " + this.id + ", correo: " + this.correo;
+    }
 }

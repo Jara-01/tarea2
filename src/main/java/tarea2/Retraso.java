@@ -7,4 +7,9 @@ class Retraso extends Asistencia {
     public Retraso(Instant horaRetraso) {
         this.hora = horaRetraso;
     }
+
+    @Override
+    public String toString(){
+        return "Asistencia con retraso a las " + this.hora;
+    }
 }

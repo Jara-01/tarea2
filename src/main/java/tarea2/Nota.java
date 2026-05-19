@@ -6,4 +6,9 @@ class Nota {
     public Nota(String texto){
         this.contenido = texto;
     }
+
+    @Override
+    public String toString(){
+        return "Nota: " + this.contenido;
+    }
 }

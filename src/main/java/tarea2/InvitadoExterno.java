@@ -12,7 +12,7 @@ class InvitadoExterno implements Invitable {
     }
 
     @Override
-    public void invitar(Invitacion invitacion) {System.out.println("No-empleado " + this.correo + "invitado.");}
+    public void invitar(Invitacion invitacion) {System.out.println("No-empleado " + this.correo + " invitado.");}
 
     @Override
     public String toString(){

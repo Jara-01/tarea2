@@ -3,7 +3,7 @@ package tarea2;
 class Nota {
     private String contenido;
 
-    public Nota(String texto){
+    public Nota(String texto, Reunion reunion){
         this.contenido = texto;
     }
 

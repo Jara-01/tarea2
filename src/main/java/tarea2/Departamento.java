@@ -5,12 +5,14 @@ class Departamento implements Invitable {
     private String nombre;
     private ArrayList<Empleado> empleados;
 
-    public Departamento(String nombre, ArrayList<Empleado> empleadosLista){
+    public Departamento(String nombre){
         this.nombre = nombre;
-        this.empleados = empleadosLista;
+        empleados = new ArrayList<Empleado>();
     }
 
     public int obtenerCantidadEmpleados(){return empleados.size();}
+    public void agregarEmpleado(Empleado empleado){this.empleados.add(empleado);}
+    public void eliminarEmpleado(int i){this.empleados.remove(i);}
 
     @Override
     public void invitar(Invitacion invitacion) {

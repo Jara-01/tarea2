@@ -14,7 +14,7 @@ class Empleado implements Invitable {
     }
 
     @Override
-    public void invitar() {}
+    public void invitar(Invitacion invitacion) {System.out.println("Empleado " + this.correo + "invitado.");}
 
     @Override
     public String toString(){

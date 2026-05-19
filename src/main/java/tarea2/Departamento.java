@@ -10,7 +10,7 @@ class Departamento implements Invitable {
     public int obtenerCantidadEmpleados(){return 0;}
 
     @Override
-    public void invitar() {}
+    public void invitar(Invitacion invitacion) {System.out.println("Empleado " + this.nombre + "invitado.");}
 
     @Override
     public String toString(){

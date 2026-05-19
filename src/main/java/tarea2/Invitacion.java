@@ -4,8 +4,8 @@ import java.time.Instant;
 class Invitacion {
     private Instant hora;
 
-    public Invitacion(Instant horaReunion) {
-        this.hora = horaReunion;
+    public Invitacion(Reunion reunion) {
+        this.hora = reunion.getHoraPrevista();
     }
 
     @Override

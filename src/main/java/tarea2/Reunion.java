@@ -31,4 +31,6 @@ abstract class Reunion {
         return "Reunión planeada para las " + this.horaPrevista + " horas, el día " + this.fecha + " duración prevista de " + this.duracionPrevista
                 + "\n Hora de inicio: " + this.horaInicio + ". Hora de finalización: " + this.horaFin;
     }
+
+    public Instant getHoraPrevista(){return this.horaPrevista;}
 }

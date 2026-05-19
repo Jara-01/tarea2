@@ -2,7 +2,12 @@ package tarea2;
 import java.time.*;
 import java.util.Date;
 import java.util.ArrayList;
-
+/**
+ * Tarea 2 de Desarrollo Orientado a Objetos, 2026-1
+ * @author Benjamín Antonio Rivas Sepulveda
+ * @author Ignacio Moisés Lama Méndez
+ * @author Joaquín Enrique Jara Troncoso
+ */
 abstract class Reunion {
     private Date fecha;
     private Instant horaPrevista;

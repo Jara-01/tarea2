@@ -43,7 +43,10 @@ class Departamento implements Invitable {
         }
     }
 
-    /** toString personalizado que entrega el nombre y la cantidad de empleados del departamento como string. */
+    /**
+     * toString personalizado
+     * @return Nombre del departamento y su cantidad de empleados como string.
+     */
     @Override
     public String toString(){
         return "Departamento " + this.nombre + ": " + empleados.size() + " empleados.";
